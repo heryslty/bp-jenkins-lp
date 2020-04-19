@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: p-lp-pod
-          image: heryslty/jenkins-lp:prod-${BUILD_NUMBER}
+          image: $DOCKER_REGISTRY/$DOCKER_IMAGE_NAME:${BUILD_NUMBER}
           ports:
             - containerPort: 80
 
